@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MCQ Questions</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Multiple Choice Questions</h1>
+  <form id="mcqForm">
+    <p>Question 1: What is the capital of France?</p>
+    <label>
+      <input type="radio" name="q1" value="incorrect"> Berlin
+    </label><br>
+    <label>
+      <input type="radio" name="q1" value="incorrect"> London
+    </label><br>
+    <label>
+      <input type="radio" name="q1" value="correct"> Paris
+    </label><br>
+
+    <p>Question 2: Which planet is known as the "Red Planet"?</p>
+    <label>
+      <input type="radio" name="q2" value="incorrect"> Venus
+    </label><br>
+    <label>
+      <input type="radio" name="q2" value="correct"> Mars
+    </label><br>
+    <label>
+      <input type="radio" name="q2" value="incorrect"> Jupiter
+    </label><br>
+
+    <button type="button" onclick="checkAnswers()">Submit</button>
+  </form>
+  <p id="result" style="display: none;">Total Marks: <span id="marks">0</span></p>
+</div>
+
+<script>
+function checkAnswers() {
+  const form = document.getElementById("mcqForm");
+  const q1Answer = form.querySelector('input[name="q1"]:checked');
+  const q2Answer = form.querySelector('input[name="q2"]:checked');
+
+  let totalMarks = 0;
+
+  if (q1Answer && q1Answer.value === "correct") {
+    totalMarks += 1;
+  }
+
+  if (q2Answer && q2Answer.value === "correct") {
+    totalMarks += 1;
+  }
+
+  document.getElementById("result").style.display = "block";
+  document.getElementById("marks").textContent = totalMarks;
+}
+</script>
+</body>
+</html>
