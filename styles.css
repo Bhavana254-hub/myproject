@@ -41,37 +41,51 @@ body {
     padding-top: 150px;
     line-height: 20px;
   }
-  .Reg{
-    padding-top: 0px;
-    text-align: center;
-    color:white;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  }
+
 p{
     
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
 form{
-    color:white;
-    background-image: url(./images/grey-background.jpg);
+    background-color: transparent;
+    color:lightblue;
     border-radius: 20px;
     margin: 0px auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     line-height: 30px;
-    border: 2px solid black;
-    padding: 15px;
+    padding: 50px;
     max-width: 350px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
+}
+form:hover{
+  box-shadow: 0px 0px 10px rgb(80, 2, 2)
 }
 #register{
     justify-content: center;
     padding-top: 100px;
+    background-image: url(./images/2233.jfif);
 }
 
-.infoblock{
+  .course{
+    text-align: left;
+  }
+  .popular
+  {
+    margin-top: 250px;
+  }
+  .input{
+    width: 9cm;
+    padding: 10px;
+    margin-top: 4px;
+  }
+  .courseimg{
+    width:9cm;
+    height:8cm;
+  }
+  .infoblock{
 		font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 		font-size:17px;
 		padding:1%;
@@ -95,24 +109,19 @@ form{
 		opacity: 1;
 
 	}
-  .course{
-    text-align: left;
-  }
-  .popular
-  {
-    margin-top: 250px;
-  }
-  .input{
-    width: 9cm;
-  }
-  .reg button{
+  .Reg{
+    padding-top: 0px;
+    text-align: center;
     align-content: center;
-    margin-left: 3.5cm;
+    color:lightblue;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
-  .courseimg{
-    width:9cm;
-    height:8cm;
+  .button{
+    display: grid;
+    place-items: center;
+    margin-top: 40px;
+    align-items: center;
   }
   
+
   
