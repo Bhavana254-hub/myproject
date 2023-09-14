@@ -10,6 +10,9 @@ body {
     background-repeat: no-repeat; 
     background-attachment: fixed; 
   }
+.color{
+  color:orangered
+}
 
 #main-bg{
     background-image: url('./images/computer-keyboards-wallpaper-preview.jpg');
@@ -81,6 +84,9 @@ form:hover{
     padding: 10px;
     margin-top: 4px;
   }
+  .input:hover{
+    border-width: 2px;
+  }
   .courseimg{
     width:9cm;
     height:8cm;
@@ -122,6 +128,64 @@ form:hover{
     margin-top: 40px;
     align-items: center;
   }
-  
+.head{
+  background-color: grey;
+  height: 150px;
+  text-align: center;
+  width: 100%;
+}
+.galhead{
+  color:black;
+  font-size: 50px;
+}
+.gal{
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.gal img {
+  width: 290px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.gal img:hover{
+  box-shadow: 0px 0px 5px orangered;
+	opacity: 1;
+  height: 300px;
+}
+.maps{
+  width:50%;
+  border-radius: 20px;
+}
+.con{
+  background-color: grey;
+  background-image: url(./images/contact.jfif);
+  height: 100px;
+  text-align: center;
+  width: 100%;
+  padding-left: 10px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; ;
+}
 
-  
+.contact{
+  background-color: transparent;
+  color:black;
+  border-radius: 20px;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 30px;
+  padding: 50px;
+  max-width: 350px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
+}
+.contact:hover{
+ box-shadow: 0px 0px 10px rgb(80, 2, 2)
+}
+.content{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}

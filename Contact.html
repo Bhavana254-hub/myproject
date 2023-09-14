@@ -1,49 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Contact Us</title>
-    <script>
-function jfun2()
-{
-    // alert("Test")
-       var name=form1.name.value;
-       var designation=form1.designation.value;
-       var email=form1.email.value;
-   
-    if(name=="" || designation=="" || email=="")
-    {
-        alert("Req");
-        return false;
-        form1.name.focus();
-        form1.designation.focus();
-        form1.email.focus();
-    }
-    else{
-        alert("Next");
-        return true;
-
-    }
-}
-</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <form class="stycon">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.865407059841!2d77.61388127377275!3d13.04423801328424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1770e1959907%3A0x368dea11d919b8a8!2sEpsilon!5e0!3m2!1sen!2sin!4v1692899626981!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    <div class="con">
-    <h1>Contact Us</h1>
-    <form name="form1" method="get" onsubmit="return jfun2()">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" ><br><br>
-        
-        <label for="designation">Designation:</label>
-        <input type="text" id="designation" name="designation" ><br><br>
-        
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" ><br><br>
-        
-        <input type="submit" value="Submit">
-    </form>
-    </form>
+<body class="bodycon">
+    <h1 class="con">Contact Us</h1>
+    <div class="content">
+        <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.865407059841!2d77.61388127377275!3d13.04423801328424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1770e1959907%3A0x368dea11d919b8a8!2sEpsilon!5e0!3m2!1sen!2sin!4v1692899626981!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <form class="contact">
+            <div class="box">
+                <label for="name">Name </label><br>
+                <input class="input" type="text" placeholder="Enter your name"><br>
+                <label for="Desgn">Designation</label><br>
+                <input class="input" type="text" placeholder="Enter your Designation"><br>
+                <label for="email">Email</label><br>
+                <input class="input" type="text" placeholder="Enter Email"><br>
+                <div class="button">
+                    <button type="submit">Submit</button>
+                </div>
+            </div>                     
+        </form>
     </div>
 </body>
 </html>
